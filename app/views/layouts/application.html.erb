@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VkMisterCocktail</title>
+    <title>Vk's Cafofo'</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="btn btn-success">
+    <%= link_to "Add a Drink", new_cocktail_path%>
+  </div>
+  <div class="btn btn-success">
+    <%= link_to "Back to Menu", index_path%>
+  </div>
+  </nav>
 
   <body>
     <%= yield %>

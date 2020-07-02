@@ -38,63 +38,49 @@ Ingredient.create(name: "Olive")
 Ingredient.create(name: "Apple")
 Ingredient.create(name: "Strawberry")
 
-one_photo = "https://images.unsplash.com/photo-1518176258769-f227c798150e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+one_photo = "https://images.unsplash.com/photo-1575367439058-6096bb9cf5e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 file = URI.open(one_photo)
 filename = File.basename(URI.parse(one_photo).path)
 one_cocktail = Cocktail.create(name: "Beer")
 one_cocktail.photo.attach(io: file, filename: filename)
 one_cocktail.save
 
-second_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031247/Marguerita_zl6aqu.jpg"
+second_photo = "https://images.unsplash.com/photo-1548849956-8aa872cefb93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(second_photo)
 filename = File.basename(URI.parse(second_photo).path)
 second_cocktail = Cocktail.create(name: "Marguerita")
 second_cocktail.photo.attach(io: file, filename: filename)
 second_cocktail.save
 
-thrid_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031335/Ice_Coffe_oigkfd.jpg"
+thrid_photo = "https://images.unsplash.com/photo-1514189347135-3e90a3b561f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(thrid_photo)
 filename = File.basename(URI.parse(thrid_photo).path)
 thrid_cocktail = Cocktail.create(name: "Ice Coffe")
 thrid_cocktail.photo.attach(io: file, filename: filename)
 thrid_cocktail.save
 
-fourth_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031428/vodka_party_qkskro.jpg"
+fourth_photo = "https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80"
 file = URI.open(fourth_photo)
 filename = File.basename(URI.parse(fourth_photo).path)
-fourth_cocktail = Cocktail.create(name: "Party Vodka")
+fourth_cocktail = Cocktail.create(name: "Vodka")
 fourth_cocktail.photo.attach(io: file, filename: filename)
 fourth_cocktail.save
 
-fifth_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031514/cuba_libre_q94ick.jpg"
-file = URI.open(fifth_photo)
-filename = File.basename(URI.parse(fifth_photo).path)
-fifth_cocktail = Cocktail.create(name: "Cuba Libre")
-fifth_cocktail.photo.attach(io: file, filename: filename)
-fifth_cocktail.save
-
-sixth_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031566/caipirinha_x3tgw3.jpg"
+sixth_photo = "https://images.unsplash.com/photo-1582568822042-613147a60a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(sixth_photo)
 filename = File.basename(URI.parse(sixth_photo).path)
 sixth_cocktail = Cocktail.create(name: "Caipirinha")
 sixth_cocktail.photo.attach(io: file, filename: filename)
 sixth_cocktail.save
 
-seventh_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031823/capirinha_de_morango_urtpy0.jpg"
-file = URI.open(seventh_photo)
-filename = File.basename(URI.parse(seventh_photo).path)
-seventh_cocktail = Cocktail.create(name: "Strawberry Capirinha")
-seventh_cocktail.photo.attach(io: file, filename: filename)
-seventh_cocktail.save
-
-eight_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593031972/Old-Fashioned-Cocktail-LEAD-5_adfavm.jpg"
+eight_photo = "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
 file = URI.open(eight_photo)
 filename = File.basename(URI.parse(eight_photo).path)
-eight_cocktail = Cocktail.create(name: "Old fashioned")
+eight_cocktail = Cocktail.create(name: "Long Island Iced Tea")
 eight_cocktail.photo.attach(io: file, filename: filename)
 eight_cocktail.save
 
-ninght_photo = "https://res.cloudinary.com/dmcepupsl/image/upload/v1593033457/martini_vuuqdn.jpg"
+ninght_photo = "https://images.unsplash.com/photo-1575650772417-e6b418b0d106?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 file = URI.open(ninght_photo)
 filename = File.basename(URI.parse(ninght_photo).path)
 ninght_cocktail = Cocktail.create(name: "Apple Martini")

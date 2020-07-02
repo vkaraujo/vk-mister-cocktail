@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="show-image"><%=  cl_image_tag(@cocktail.photo.key,
+  <h1 class="show-image m-4"><%=  cl_image_tag(@cocktail.photo.key,
         width: 400, height: 300, crop: :fill) %></h1>
 
   <h3>Doses</h3>
@@ -12,6 +12,6 @@
   <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.association :ingredient %>
     <%= f.input :description %>
-    <%= f.submit "Add a Dose!", class: "btn btn-secondary" %>
+    <%= f.submit "Add a Dose!", class: "btn btn-success text-white" %>
   <% end %>
 </div>
